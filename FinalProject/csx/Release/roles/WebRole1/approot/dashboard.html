@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Crawler Dashboard</title>
+</head>
+<body>
+    <a href="index.html">Search Page</a>
+    <p>Controls</p>
+    <button class="start">Start Crawling</button>
+    <input type="text" id="root" />
+    <button class="stop">Stop Crawling and Clear</button>
+
+
+    <p>Search Title by URL</p>
+    <input type="text" id="url" />
+    <input type="submit" id="submitBtn" />
+    <p class="title"></p>
+
+    <p>Status:</p>
+    <ul>
+        <li>State of Web Crawler: <span class="status"></span></li>
+        <li>CPU Utilization: <span class="cpu"></span></li>
+        <li>Memory Usage: <span class="ram"></span></li>
+        <li># of URLs Discovered: <span class="discovery"></span></li>
+        <li>Size of Trie: <span class="trie"></span></li>
+        <li>Last Title Inserted: <span class="inserted"></span></li>
+        <li>Last 10 URLs crawled: <span class="last"></span></li>
+        <li>Size of Queue: <span class="queue"></span></li>
+        <li>Size of Index: <span class="index"></span></li>
+        <li>Errors: <span class="errors"></span></li>
+    </ul>
+
+    <script src="jquery.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
